@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="ru.stqa.maven.MyFirstTest" time="102.752" errors="2" skipped="0">
+<testsuite tests="1" failures="0" name="ru.stqa.maven.MyFirstTest" time="48.491" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -64,24 +64,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ru.stqa.maven.MyFirstTest" name="myFirstTest" time="51.375">
+  <testcase classname="ru.stqa.maven.MyFirstTest" name="myFirstTest" time="48.491">
     <error message="element not interactable
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [001321d4809f632d8480917136ff0590, clickElement {id=31a7b41b-c56c-4792-bd67-b81504b17cb6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:2634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2634/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (001321d4809f632d8480917136ff0590)] -&gt; name: btnK]
-Session ID: 001321d4809f632d8480917136ff0590" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
+Command: [98d6ac6f3171ad43cfce6ec37da22abb, clickElement {id=3560834b-3007-4250-9ba8-64905f7cae1c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:19983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:19983/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (98d6ac6f3171ad43cfce6ec37da22abb)] -&gt; name: btnK]
+Session ID: 98d6ac6f3171ad43cfce6ec37da22abb" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [001321d4809f632d8480917136ff0590, clickElement {id=31a7b41b-c56c-4792-bd67-b81504b17cb6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:2634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2634/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (001321d4809f632d8480917136ff0590)] -&gt; name: btnK]
-Session ID: 001321d4809f632d8480917136ff0590
+Command: [98d6ac6f3171ad43cfce6ec37da22abb, clickElement {id=3560834b-3007-4250-9ba8-64905f7cae1c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:19983}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:19983/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (98d6ac6f3171ad43cfce6ec37da22abb)] -&gt; name: btnK]
+Session ID: 98d6ac6f3171ad43cfce6ec37da22abb
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -134,91 +134,374 @@ Session ID: 001321d4809f632d8480917136ff0590
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 61857
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 50152
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-��� 06, 2021 7:24:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1638820246.079][INFO]: [a1dc44b7f06391106c60858bd56949de] COMMAND InitSession {
+   &quot;capabilities&quot;: {
+      &quot;firstMatch&quot;: [ {
+         &quot;browserName&quot;: &quot;chrome&quot;,
+         &quot;goog:chromeOptions&quot;: {
+            &quot;args&quot;: [  ],
+            &quot;extensions&quot;: [  ]
+         }
+      } ]
+   },
+   &quot;desiredCapabilities&quot;: {
+      &quot;browserName&quot;: &quot;chrome&quot;,
+      &quot;goog:chromeOptions&quot;: {
+         &quot;args&quot;: [  ],
+         &quot;extensions&quot;: [  ]
+      }
+   }
+}
+[1638820246.086][INFO]: Populating Preferences file: {
+   &quot;alternate_error_pages&quot;: {
+      &quot;enabled&quot;: false
+   },
+   &quot;autofill&quot;: {
+      &quot;enabled&quot;: false
+   },
+   &quot;browser&quot;: {
+      &quot;check_default_browser&quot;: false
+   },
+   &quot;distribution&quot;: {
+      &quot;import_bookmarks&quot;: false,
+      &quot;import_history&quot;: false,
+      &quot;import_search_engine&quot;: false,
+      &quot;make_chrome_default_for_user&quot;: false,
+      &quot;skip_first_run_ui&quot;: true
+   },
+   &quot;dns_prefetching&quot;: {
+      &quot;enabled&quot;: false
+   },
+   &quot;profile&quot;: {
+      &quot;content_settings&quot;: {
+         &quot;pattern_pairs&quot;: {
+            &quot;https://*,*&quot;: {
+               &quot;media-stream&quot;: {
+                  &quot;audio&quot;: &quot;Default&quot;,
+                  &quot;video&quot;: &quot;Default&quot;
+               }
+            }
+         }
+      },
+      &quot;default_content_setting_values&quot;: {
+         &quot;geolocation&quot;: 1
+      },
+      &quot;default_content_settings&quot;: {
+         &quot;geolocation&quot;: 1,
+         &quot;mouselock&quot;: 1,
+         &quot;notifications&quot;: 1,
+         &quot;popups&quot;: 1,
+         &quot;ppapi-broker&quot;: 1
+      },
+      &quot;password_manager_enabled&quot;: false
+   },
+   &quot;safebrowsing&quot;: {
+      &quot;enabled&quot;: false
+   },
+   &quot;search&quot;: {
+      &quot;suggest_enabled&quot;: false
+   },
+   &quot;translate&quot;: {
+      &quot;enabled&quot;: false
+   }
+}
+[1638820246.087][INFO]: Populating Local State file: {
+   &quot;background_mode&quot;: {
+      &quot;enabled&quot;: false
+   },
+   &quot;ssl&quot;: {
+      &quot;rev_checking&quot;: {
+         &quot;enabled&quot;: false
+      }
+   }
+}
+[1638820246.090][INFO]: Launching chrome: &quot;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&quot; --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=&quot;C:\Users\MF64A~1.VID\AppData\Local\Temp\scoped_dir37976_1386009672&quot; data:,
+[1638820246.731][DEBUG]: DevTools HTTP Request: http://localhost:19966/json/version
+[1638820247.055][DEBUG]: DevTools HTTP Response: {
+   &quot;Browser&quot;: &quot;Chrome/96.0.4664.45&quot;,
+   &quot;Protocol-Version&quot;: &quot;1.3&quot;,
+   &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36&quot;,
+   &quot;V8-Version&quot;: &quot;9.6.180.12&quot;,
+   &quot;WebKit-Version&quot;: &quot;537.36 (@76e4c1bb2ab4671b8beba3444e61c0f17584b2fc)&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:19966/devtools/browser/c8531e16-c2ad-4b10-90ae-7f4d63b95678&quot;
+}
+
+[1638820247.055][DEBUG]: DevTools HTTP Request: http://localhost:19966/json/list
+[1638820247.061][DEBUG]: DevTools HTTP Response: [ {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:19966/devtools/page/C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+   &quot;id&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+   &quot;title&quot;: &quot;&quot;,
+   &quot;type&quot;: &quot;page&quot;,
+   &quot;url&quot;: &quot;data:,&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:19966/devtools/page/C2E0F2E5C588077FFC012EC72A1277FD&quot;
+} ]
+
+[1638820247.066][DEBUG]: DevTools HTTP Request: http://localhost:19966/json/list
+[1638820247.074][DEBUG]: DevTools HTTP Response: [ {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=localhost:19966/devtools/page/C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+   &quot;id&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+   &quot;title&quot;: &quot;&quot;,
+   &quot;type&quot;: &quot;page&quot;,
+   &quot;url&quot;: &quot;data:,&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://localhost:19966/devtools/page/C2E0F2E5C588077FFC012EC72A1277FD&quot;
+} ]
+
+[1638820247.087][INFO]: resolved localhost to [&quot;::1&quot;,&quot;127.0.0.1&quot;]
+[1638820247.089][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=1) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;source&quot;: &quot;(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();&quot;
+}
+[1638820247.089][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=2) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;expression&quot;: &quot;(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();&quot;
+}
+[1638820247.089][DEBUG]: DevTools WebSocket Command: Log.enable (id=3) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.090][DEBUG]: DevTools WebSocket Command: DOM.getDocument (id=4) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.090][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=5) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;autoAttach&quot;: true,
+   &quot;flatten&quot;: true,
+   &quot;waitForDebuggerOnStart&quot;: false
+}
+[1638820247.090][DEBUG]: DevTools WebSocket Command: Page.enable (id=6) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.090][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=1) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;identifier&quot;: &quot;1&quot;
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=2) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;result&quot;: {
+      &quot;type&quot;: &quot;undefined&quot;
+   }
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Log.enable (id=3) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: DOM.getDocument (id=4) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;root&quot;: {
+      &quot;backendNodeId&quot;: 1,
+      &quot;baseURL&quot;: &quot;data:,&quot;,
+      &quot;childNodeCount&quot;: 0,
+      &quot;children&quot;: [  ],
+      &quot;compatibilityMode&quot;: &quot;NoQuirksMode&quot;,
+      &quot;documentURL&quot;: &quot;data:,&quot;,
+      &quot;localName&quot;: &quot;&quot;,
+      &quot;nodeId&quot;: 1,
+      &quot;nodeName&quot;: &quot;#document&quot;,
+      &quot;nodeType&quot;: 9,
+      &quot;nodeValue&quot;: &quot;&quot;,
+      &quot;xmlVersion&quot;: &quot;&quot;
+   }
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=5) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Page.enable (id=6) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.214][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: DOM.childNodeInserted C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;node&quot;: {
+      &quot;attributes&quot;: [  ],
+      &quot;backendNodeId&quot;: 2,
+      &quot;childNodeCount&quot;: 0,
+      &quot;frameId&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+      &quot;localName&quot;: &quot;html&quot;,
+      &quot;nodeId&quot;: 2,
+      &quot;nodeName&quot;: &quot;HTML&quot;,
+      &quot;nodeType&quot;: 1,
+      &quot;nodeValue&quot;: &quot;&quot;
+   },
+   &quot;parentNodeId&quot;: 1,
+   &quot;previousNodeId&quot;: 0
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: DOM.childNodeCountUpdated C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;childNodeCount&quot;: 1,
+   &quot;nodeId&quot;: 2
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: DOM.childNodeCountUpdated C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;childNodeCount&quot;: 2,
+   &quot;nodeId&quot;: 2
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: Page.loadEventFired C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;timestamp&quot;: 102910.095368
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=9) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;awaitPromise&quot;: false,
+   &quot;expression&quot;: &quot;document.readyState&quot;,
+   &quot;returnByValue&quot;: true
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;frameId&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Event: DOM.documentUpdated C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.219][DEBUG]: DevTools WebSocket Command: DOM.getDocument (id=10) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.220][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;timestamp&quot;: 102910.095928
+}
+[1638820247.220][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;context&quot;: {
+      &quot;auxData&quot;: {
+         &quot;frameId&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+         &quot;isDefault&quot;: true,
+         &quot;type&quot;: &quot;default&quot;
+      },
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;&quot;,
+      &quot;origin&quot;: &quot;://&quot;,
+      &quot;uniqueId&quot;: &quot;-6735769656137242310.7164314139540666316&quot;
+   }
+}
+[1638820247.220][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.223][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=9) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;result&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;value&quot;: &quot;complete&quot;
+   }
+}
+[1638820247.223][DEBUG]: DevTools WebSocket Command: Page.enable (id=11) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.224][DEBUG]: DevTools WebSocket Response: DOM.getDocument (id=10) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;root&quot;: {
+      &quot;backendNodeId&quot;: 1,
+      &quot;baseURL&quot;: &quot;data:,&quot;,
+      &quot;childNodeCount&quot;: 1,
+      &quot;children&quot;: [ {
+         &quot;attributes&quot;: [  ],
+         &quot;backendNodeId&quot;: 2,
+         &quot;childNodeCount&quot;: 2,
+         &quot;children&quot;: [ {
+            &quot;attributes&quot;: [  ],
+            &quot;backendNodeId&quot;: 3,
+            &quot;childNodeCount&quot;: 0,
+            &quot;localName&quot;: &quot;head&quot;,
+            &quot;nodeId&quot;: 5,
+            &quot;nodeName&quot;: &quot;HEAD&quot;,
+            &quot;nodeType&quot;: 1,
+            &quot;nodeValue&quot;: &quot;&quot;,
+            &quot;parentId&quot;: 4
+         }, {
+            &quot;attributes&quot;: [  ],
+            &quot;backendNodeId&quot;: 4,
+            &quot;childNodeCount&quot;: 0,
+            &quot;localName&quot;: &quot;body&quot;,
+            &quot;nodeId&quot;: 6,
+            &quot;nodeName&quot;: &quot;BODY&quot;,
+            &quot;nodeType&quot;: 1,
+            &quot;nodeValue&quot;: &quot;&quot;,
+            &quot;parentId&quot;: 4
+         } ],
+         &quot;frameId&quot;: &quot;C2E0F2E5C588077FFC012EC72A1277FD&quot;,
+         &quot;localName&quot;: &quot;html&quot;,
+         &quot;nodeId&quot;: 4,
+         &quot;nodeName&quot;: &quot;HTML&quot;,
+         &quot;nodeType&quot;: 1,
+         &quot;nodeValue&quot;: &quot;&quot;,
+         &quot;parentId&quot;: 3
+      } ],
+      &quot;compatibilityMode&quot;: &quot;NoQuirksMode&quot;,
+      &quot;documentURL&quot;: &quot;data:,&quot;,
+      &quot;localName&quot;: &quot;&quot;,
+      &quot;nodeId&quot;: 3,
+      &quot;nodeName&quot;: &quot;#document&quot;,
+      &quot;nodeType&quot;: 9,
+      &quot;nodeValue&quot;: &quot;&quot;,
+      &quot;xmlVersion&quot;: &quot;&quot;
+   }
+}
+[1638820247.224][DEBUG]: DevTools WebSocket Response: Page.enable (id=11) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.225][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=12) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.230][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=12) C2E0F2E5C588077FFC012EC72A1277FD {
+
+}
+[1638820247.230][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=13) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;awaitPromise&quot;: true,
+   &quot;expression&quot;: &quot;(function() { // Copyright (c) 2012 The Chromium Authors. All rights reserved.\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum f...&quot;,
+   &quot;returnByValue&quot;: true
+}
+[1638820247.235][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=13) C2E0F2E5C588077FFC012EC72A1277FD {
+   &quot;result&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;value&quot;: {
+         &quot;status&quot;: 0,
+         &quot;value&quot;: 1
+      }
+   }
+}
+[1638820247.236][INFO]: [a1dc44b7f06391106c60858bd56949de] RESPONSE InitSession {
+   &quot;capabilities&quot;: {
+      &quot;acceptInsecureCerts&quot;: false,
+      &quot;browserName&quot;: &quot;chrome&quot;,
+      &quot;browserVersion&quot;: &quot;96.0.4664.45&quot;,
+      &quot;chrome&quot;: {
+         &quot;chromedriverVersion&quot;: &quot;96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947})&quot;,
+         &quot;userDataDir&quot;: &quot;C:\\Users\\MF64A~1.VID\\AppData\\Local\\Temp\\scoped_dir37976_1386009672&quot;
+      },
+      &quot;goog:chromeOptions&quot;: {
+         &quot;debuggerAddress&quot;: &quot;localhost:19966&quot;
+      },
+      &quot;networkConnectionEnabled&quot;: false,
+      &quot;pageLoadStrategy&quot;: &quot;normal&quot;,
+      &quot;platformName&quot;: &quot;windows&quot;,
+      &quot;proxy&quot;: {
+
+      },
+      &quot;setWindowRect&quot;: true,
+      &quot;strictFileInteractability&quot;: false,
+      &quot;timeouts&quot;: {
+         &quot;implicit&quot;: 0,
+         &quot;pageLoad&quot;: 300000,
+         &quot;script&quot;: 30000
+      },
+      &quot;unhandledPromptBehavior&quot;: &quot;dismiss and notify&quot;,
+      &quot;webauthn:extension:credBlob&quot;: true,
+      &quot;webauthn:extension:largeBlob&quot;: true,
+      &quot;webauthn:virtualAuthenticators&quot;: true
+   },
+   &quot;sessionId&quot;: &quot;a1dc44b7f06391106c60858bd56949de&quot;
+}
+��� 06, 2021 10:50:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-��� 06, 2021 7:24:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+��� 06, 2021 10:50:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
-��� 06, 2021 7:24:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+��� 06, 2021 10:50:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 96 of 95
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 56650
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+��� 06, 2021 10:50:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+��� 06, 2021 10:50:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
+��� 06, 2021 10:50:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 96 of 95
 </system-err>
-  </testcase>
-  <testcase classname="ru.stqa.maven.MyFirstTest" name="myFirstTest" time="51.377">
-    <error message="Timed out waiting for driver server to stop.
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [001321d4809f632d8480917136ff0590, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:2634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2634/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001321d4809f632d8480917136ff0590" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [001321d4809f632d8480917136ff0590, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:2634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2634/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 001321d4809f632d8480917136ff0590
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)
-	at ru.stqa.maven.MyFirstTest.stop(MyFirstTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: driver.version: unknown
-	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
-	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)
-	... 39 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-635M01M&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_312&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</error>
   </testcase>
 </testsuite>
