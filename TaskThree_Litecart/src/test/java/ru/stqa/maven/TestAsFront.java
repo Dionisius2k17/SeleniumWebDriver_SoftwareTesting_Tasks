@@ -13,7 +13,7 @@ public class TestAsFront extends TestBasis{
 
     */
     @Test
-    public void testSticker(){
+    public void testOne(){
         driver.get("http://localhost/litecart/");
         List<WebElement> images = driver.findElements(By.cssSelector("li.product"));
         for (int i=0; i<images.size();i++){

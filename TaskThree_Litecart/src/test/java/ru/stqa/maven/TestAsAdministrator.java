@@ -21,7 +21,7 @@ public class TestAsAdministrator extends TestBasis{
 
     //Если раскомментить аннотации @Test - выведутся ошибки (на моём ПК по крайней мере так)
 
-    //@Test
+    @Test
     public void testOne() {
         WebElement menu = driver.findElement(By.id("box-apps-menu-wrapper"));
         List<WebElement> strings = menu.findElements(By.className("name"));
@@ -38,7 +38,7 @@ public class TestAsAdministrator extends TestBasis{
         }
     }
 
-    //@Test
+    @Test
     public void testTwo(){
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<WebElement> countries= driver.findElements(By.cssSelector("tr.row a:not([title])"));
@@ -76,7 +76,7 @@ public class TestAsAdministrator extends TestBasis{
         }
     }
 
-    //@Test
+    @Test
     public void testThree(){
         driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         List<WebElement> countries=driver.findElements(By.cssSelector("tr.row a:not([title])"));

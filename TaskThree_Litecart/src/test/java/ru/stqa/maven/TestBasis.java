@@ -41,10 +41,6 @@ public class TestBasis {
         Class classType = forName(driverFromProperties);
         driver = (WebDriver) classType.newInstance();
         wait = new WebDriverWait(driver, 10);
-        driver.get("http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
     }
 
     @After
