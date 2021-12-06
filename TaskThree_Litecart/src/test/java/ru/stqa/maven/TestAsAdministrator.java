@@ -19,8 +19,6 @@ public class TestAsAdministrator extends TestBasis{
         driver.findElement(By.name("login")).click();
     }
 
-    //Если раскомментить аннотации @Test - выведутся ошибки (на моём ПК по крайней мере так)
-
     @Test
     public void testOne() {
         WebElement menu = driver.findElement(By.id("box-apps-menu-wrapper"));
