@@ -36,7 +36,7 @@ public class TestAsAdministrator extends TestBasis{
         }
     }
 
-    @Test
+    /*@Test
     public void testTwo(){
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<WebElement> countries= driver.findElements(By.cssSelector("tr.row a:not([title])"));
@@ -92,5 +92,5 @@ public class TestAsAdministrator extends TestBasis{
             assert zoneDefault.equals(zoneList);
             driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
         }
-    }
+    }*/
 }
