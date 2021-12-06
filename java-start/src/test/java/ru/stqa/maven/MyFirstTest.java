@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
@@ -17,6 +18,7 @@ public class MyFirstTest {
     @Before
     public void start() {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+        driver=new ChromeDriver(new ChromeDriverService.Builder().withVerbose(true).build());
         driver = new ChromeDriver();
         wait=new WebDriverWait(driver, 10);
     }
