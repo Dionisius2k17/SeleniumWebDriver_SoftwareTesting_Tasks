@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: ru.stqa.maven.MyFirstTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 42.314 sec <<< FAILURE!
-myFirstTest(ru.stqa.maven.MyFirstTest)  Time elapsed: 42.237 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.613 sec <<< FAILURE!
+myFirstTest(ru.stqa.maven.MyFirstTest)  Time elapsed: 12.534 sec  <<< ERROR!
 org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=96.0.4664.45)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-635M01M', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fa234ad4ee9eb00d1a16245e1be96fd3, clickElement {id=59a5d200-8dc0-4e96-aba7-4b98a7b904dc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:2254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2254/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (fa234ad4ee9eb00d1a16245e1be96fd3)] -> name: btnK]
-Session ID: fa234ad4ee9eb00d1a16245e1be96fd3
+Command: [feb50a54775885aa51f9a13816783bd5, clickElement {id=bcb2626d-ae1d-4002-b5d8-2050cc809c23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MF64A~1.VID\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:1350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:1350/devtool..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (feb50a54775885aa51f9a13816783bd5)] -> name: btnK]
+Session ID: feb50a54775885aa51f9a13816783bd5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -25,7 +25,7 @@ Session ID: fa234ad4ee9eb00d1a16245e1be96fd3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at ru.stqa.maven.MyFirstTest.myFirstTest(MyFirstTest.java:30)
+	at ru.stqa.maven.MyFirstTest.myFirstTest(MyFirstTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
