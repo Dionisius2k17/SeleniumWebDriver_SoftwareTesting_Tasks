@@ -29,7 +29,7 @@ public class TestAsFront extends TestBasis{
     /*
     Переходим по ссылке, заполняем необходимые поля*/
 
-    @Test
+    //@Test
     public void test11(){
         //клик по ссылке
         driver.findElement(By.cssSelector(".content table a")).click();
@@ -66,4 +66,5 @@ public class TestAsFront extends TestBasis{
         //logout
         driver.findElement(By.xpath("//a[.='Logout']")).click();
     }
+
 }
