@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,7 +47,7 @@ public class TestAsFront extends TestBasis{
         WebElement zoneSelect=driver.findElement(By.cssSelector("select[name=zone_code]"));
         wait.until(ExpectedConditions.visibilityOf(zoneSelect));
         new Select(zoneSelect).selectByVisibleText("Texas");
-        String email= getSaltString();
+        String email= getAllowedCharsString();
         driver.findElement(By.cssSelector("[name=email]")).sendKeys(email+"@gmail.com");
         WebElement phoneField=driver.findElement(By.name("phone"));
         phoneField.click();
@@ -68,8 +69,8 @@ public class TestAsFront extends TestBasis{
     }
 
     /*
-    * 1. Получаем текст в строку, исходную цену (без учёта скидки) и ее цвет, аналогично проходимся и по акционной цене*/
-    @Test
+    * Получаем текст в строку, исходную цену (без учёта скидки) и ее цвет, аналогично проходимся и по акционной цене*/
+    //@Test
     public void test10() {
         WebElement yd = driver.findElement(By.cssSelector("#box-campaigns .name"));
         String firstDuck = yd.getText();
@@ -162,4 +163,43 @@ public class TestAsFront extends TestBasis{
         //проверяем шрифты
         assert sizeDPriceCard > sizeOPriceCard;
     }
+
+
+    //@Test
+    public void test13() {
+        List<String> locators = new ArrayList<>();
+        locators.add("//span[@class='quantity' and contains(.,'1')]");
+        locators.add("//span[@class='quantity' and contains(.,'2')]");
+        locators.add("//span[@class='quantity' and contains(.,'3')]");
+        for (String locator : locators) {
+            //клик по первому товару
+            driver.findElement(By.cssSelector("#box-most-popular li:first-child")).click();
+            //добавление в корзину
+            if (isElementPresent(By.cssSelector(".options"))) {
+                WebElement select = driver.findElement(By.tagName("select"));
+                new Select(select).selectByIndex(1);
+                driver.findElement(By.name("add_cart_product")).click();
+            } else {
+                driver.findElement(By.name("add_cart_product")).click();
+            }
+            //ждем изменения количества
+            wait.until((WebDriver d) -> d.findElement(By.xpath(locator)));
+            //домой
+            driver.findElement(By.className("fa-home")).click();
+        }
+        //заходим в корзину
+        driver.findElement(By.cssSelector("#cart .link")).click();
+        //цикл, пока есть товар в корзине
+        while (isElementPresent(By.name("remove_cart_item"))) {
+            //находим таблицу
+            WebElement dataTable = driver.findElement(By.className("dataTable"));
+            //ожидаем видимость кнопки remove
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("remove_cart_item")));
+            //клик по remove
+            driver.findElement(By.name("remove_cart_item")).click();
+            //ждем обновление таблицы
+            wait.until(ExpectedConditions.stalenessOf(dataTable));
+        }
+    }
+
 }

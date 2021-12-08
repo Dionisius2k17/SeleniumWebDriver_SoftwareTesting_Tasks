@@ -7,10 +7,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static java.lang.Class.forName;
 import java.io.IOException;
-import java.util.NoSuchElementException;
+import org.openqa.selenium.NoSuchElementException;
 import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.MalformedURLException;
+import java.net.URL;
+import static org.openqa.selenium.Platform.*;
 
 public class TestBasis {
     public static WebDriver driver;
@@ -24,23 +36,22 @@ public class TestBasis {
         catch (NoSuchElementException ex){return false;}
     }
 
-    protected String getSaltString() {
-        //создаем строку символов для email
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    protected String getAllowedCharsString() {
+        String AllowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         //создаем конструктор строк
-        StringBuilder salt = new StringBuilder();
+        StringBuilder constr = new StringBuilder();
         //создаем генератор чисел
         Random rnd = new Random();
         //цикл записывает 9 символов в конструктор строк
-        while (salt.length() < 10) {
+        while (constr.length() < 10) {
             //генерируем индекс
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            int index = (int) (rnd.nextFloat() * AllowedChars.length());
             //добавляем символ в конструктор строк
-            salt.append(SALTCHARS.charAt(index));
+            constr.append(AllowedChars.charAt(index));
         }
         //преобразуем конструктор в строку
-        String saltStr = salt.toString();
-        return saltStr;
+        String constrToStr = constr.toString();
+        return constrToStr;
     }
 
     @Before
