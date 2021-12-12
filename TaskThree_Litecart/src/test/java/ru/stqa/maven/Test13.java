@@ -15,7 +15,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class Test13 extends TestBasis{
 
-    @Test
+    //@Test
     public void test13() throws Exception{
         driver.get("http://localhost/litecart/");
         int numberOfProducts = 3;
