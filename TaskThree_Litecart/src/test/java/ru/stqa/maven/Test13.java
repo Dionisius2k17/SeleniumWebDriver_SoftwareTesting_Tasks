@@ -11,49 +11,50 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test13 extends TestBasis{
-    //@Before
-    public void openHomePage(){
-        driver.get("http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
-    }
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-    //@Test
-    public void test13() {
-        List<String> locators = new ArrayList<>();
-        locators.add("//span[@class='quantity' and contains(.,'1')]");
-        locators.add("//span[@class='quantity' and contains(.,'2')]");
-        locators.add("//span[@class='quantity' and contains(.,'3')]");
-        for (String locator : locators) {
-            //клик по первому товару
-            driver.findElement(By.cssSelector("#box-most-popular li:first-child")).click();
-            //добавление в корзину
-            if (isElementPresent(By.cssSelector(".options"))) {
-                WebElement select = driver.findElement(By.tagName("select"));
-                new Select(select).selectByIndex(1);
-                driver.findElement(By.name("add_cart_product")).click();
-            } else {
-                driver.findElement(By.name("add_cart_product")).click();
+public class Test13 extends TestBasis{
+
+    @Test
+    public void test13() throws Exception{
+        driver.get("http://localhost/litecart/");
+        int numberOfProducts = 3;
+        for (int a = 0; a < numberOfProducts; a++) {
+            List<WebElement> productsMP = driver.findElements(By.cssSelector("#box-most-popular li"));
+            productsMP.get(0).click();
+            WebElement quantityInCart = driver.findElement(By.cssSelector("#cart .quantity"));
+            String quantity = quantityInCart.getAttribute("textContent");
+            int intQ = Integer.valueOf(quantity);
+            if(isElementPresent(By.cssSelector("[name='options[Size]']"))){
+                driver.findElement(By.cssSelector("[name='options[Size]']")).click();
+                driver.findElement(By.cssSelector("[name='options[Size]'] [value=Medium]")).click();
             }
-            //ждем изменения количества
-            wait.until((WebDriver d) -> d.findElement(By.xpath(locator)));
-            //домой
-            driver.findElement(By.className("fa-home")).click();
+            driver.findElement(By.cssSelector("button[value='Add To Cart']")).click();
+            wait.until(ExpectedConditions.attributeContains(quantityInCart, "textContent", Integer.toString(intQ + 1)));
+            if(a==numberOfProducts-1){
+                driver.findElement(By.cssSelector("a.link[href*=checkout]")).click();
+            }else{
+                driver.navigate().back();
+            }
         }
-        //заходим в корзину
-        driver.findElement(By.cssSelector("#cart .link")).click();
-        //цикл, пока есть товар в корзине
-        while (isElementPresent(By.name("remove_cart_item"))) {
-            //находим таблицу
-            WebElement dataTable = driver.findElement(By.className("dataTable"));
-            //ожидаем видимость кнопки remove
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("remove_cart_item")));
-            //клик по remove
-            driver.findElement(By.name("remove_cart_item")).click();
-            //ждем обновление таблицы
-            wait.until(ExpectedConditions.stalenessOf(dataTable));
+        wait.until(titleIs("Checkout | My Store"));
+        WebElement CheckoutSummary = driver.findElement(By.cssSelector("#box-checkout-summary"));
+        List <WebElement> CheckoutSummaryProducts = CheckoutSummary.findElements(By.cssSelector("td.item"));
+        int typesOfProductsInCart = CheckoutSummaryProducts.size();
+        while (true){
+            if(isElementPresent(By.cssSelector("button[value=Remove]"))){
+                WebElement removeButton = driver.findElement(By.cssSelector("button[value=Remove]"));
+                wait.until(visibilityOf(removeButton));
+                removeButton.click();
+                wait.until(numberOfElementsToBe(By.cssSelector("td.item"), typesOfProductsInCart-1));
+                typesOfProductsInCart--;
+                continue;
+            }
+            else{
+                wait.until(ExpectedConditions.stalenessOf(CheckoutSummary));
+                break;
+            }
         }
+        System.out.println("DONE!!!");
     }
 }

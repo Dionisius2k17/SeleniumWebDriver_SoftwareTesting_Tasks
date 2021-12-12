@@ -30,9 +30,11 @@ public class TestBasis {
     public static Properties props;
 
     public boolean isElementPresent (By locator){
-        try {//wait.until((WebDriver d)->d.findElement(locator));
+        try {
+            //wait.until((WebDriver d)->d.findElement(locator));
             driver.findElement(locator);
-            return true;}
+            return true;
+        }
         catch (NoSuchElementException ex){return false;}
     }
 

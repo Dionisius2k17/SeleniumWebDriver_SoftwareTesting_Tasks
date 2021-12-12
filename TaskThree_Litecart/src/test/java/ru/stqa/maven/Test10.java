@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class Test10 extends TestBasis{
 
-    @Before
+    //@Before
     public void openHomePage(){
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
@@ -21,8 +21,9 @@ public class Test10 extends TestBasis{
     }
 
     /*
-     * Получаем текст в строку, исходную цену (без учёта скидки) и ее цвет, аналогично проходимся и по акционной цене*/
-    @Test
+     * Получаем текст в строку, исходную цену (без учёта скидки) и ее цвет, аналогично проходимся и по акционной цене
+     * */
+    //@Test
     public void test10() {
         WebElement yd = driver.findElement(By.cssSelector("#box-campaigns .name"));
         String firstDuck = yd.getText();

@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Test12 extends TestBasis{
 
-    @Before
+    //@Before
     public void openHomePage(){
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
@@ -21,7 +21,7 @@ public class Test12 extends TestBasis{
         driver.findElement(By.name("login")).click();
     }
 
-    @Test
+    //@Test
     public void test12(){
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         //проверяем количество позиций создаваемого товара в каталоге
