@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-//здесь будет решение 17 задания
+//17 задание
 public class Test17 extends TestBasis {
 
     @Before

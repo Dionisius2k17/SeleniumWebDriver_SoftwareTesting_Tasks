@@ -21,7 +21,9 @@ public class Task9 extends TestBasis {
         driver.findElement(By.name("login")).click();
     }
 
+
     //@Test
+    @Test
     public void test9Part1() throws Exception{
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         List<WebElement> list = driver.findElements(By.cssSelector("li#app-"));
@@ -44,6 +46,7 @@ public class Task9 extends TestBasis {
         WebElement countriesZonesTable = driver.findElement(By.cssSelector("table.dataTable"));
         List<WebElement> allRowsCountriesZones = countriesZonesTable.findElements(By.cssSelector("tr"));
         int iterations = allRowsCountriesZones.size();
+        countriesList.clear();
         for (int i = 1; i < iterations - 1; i++) {
             List<WebElement> cellsZones = allRowsCountriesZones.get(i).findElements(By.cssSelector("td"));
             int zone = Integer.parseInt(cellsZones.get(5).getAttribute("textContent"));
@@ -59,8 +62,11 @@ public class Task9 extends TestBasis {
                 sortedCountriesZones = (ArrayList<String>) countryZones;
                 Collections.sort(sortedCountriesZones);
                 Assert.assertEquals(sortedCountriesZones, countryZones);
-                //System.out.println(countryZones);
+                System.out.println(countryZones);
                 driver.navigate().back();
+                countryZones.clear();
+                System.out.println(countryZones);
+                sortedCountriesZones.clear();
                 countriesZonesTable = driver.findElement(By.cssSelector("table.dataTable"));
                 allRowsCountriesZones = countriesZonesTable.findElements(By.cssSelector("tr"));
             }
@@ -98,6 +104,8 @@ public class Task9 extends TestBasis {
                 throw new Exception("Zones are not ordered by an alphabetical order");
             }
             driver.navigate().back();
+            zones.clear();
+            sortedZones.clear();
         }
 
     }
