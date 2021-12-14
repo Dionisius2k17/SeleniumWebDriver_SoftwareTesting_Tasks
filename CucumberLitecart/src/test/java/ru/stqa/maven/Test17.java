@@ -20,19 +20,30 @@ import java.util.logging.Level;
 //17 задание
 public class Test17 extends TestBasis {
 
-    //@Before
-    public void start(){
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver,10);
-    }
-
-    //@Test
-    public void test17() {
+    @Before
+    public void openHomePage(){
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
+    }
+
+
+    @Before
+    public void start(){
+
+        LoggingPreferences prefs = new LoggingPreferences();
+        prefs.enable("browser", Level.ALL);
+
+        ChromeOptions options = new ChromeOptions();
+        options.setCapability(CapabilityType.LOGGING_PREFS, prefs);
+        driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver,10);
+    }
+
+    @Test
+    public void test17() {
         driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1");
         driver.manage().logs().get("browser").forEach(log -> System.out.println(log));
         List<WebElement> products = driver.findElements(By.cssSelector("a[href*='&product'][title]"));
