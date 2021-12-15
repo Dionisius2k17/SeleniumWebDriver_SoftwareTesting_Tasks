@@ -26,7 +26,7 @@ public class Test20 implements En{
         When("^we choose and click a product on main page$", () -> {
             app.chooseProductByParametersMP(ProductCategory);
         });
-        Then("^product page opens$", () -> {
+        Then("^product page is opened$", () -> {
             assertTrue(ProductPage.productPageOpened());
         });
         When("^we choose quantity and size \\(if it is possible\\) of a product and click on AddToCart button on product page$", () -> {
@@ -44,10 +44,10 @@ public class Test20 implements En{
             }
             CartPage.open();
         });
-        Then("^cart page opens$", () -> {
+        Then("^cart page is opened$", () -> {
             assertTrue(CartPage.cartPageOpened());
         });
-        When("^we remove all products from the cart one by one$", () -> {
+        When("^we remove all the products from the cart one by one$", () -> {
             app.removeAllProductsFromTheCart();
         });
         Then("^the cart will be empty$", () -> {
