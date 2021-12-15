@@ -20,19 +20,17 @@ import java.util.logging.Level;
 //17 задание
 public class Test17 extends TestBasis {
 
-    //@Before
-    public void start(){
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver,10);
-    }
-
-    //@Test
-    public void test17() {
+    @Before
+    public void openHomePage(){
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
+        wait.until(driver -> driver.findElements(By.cssSelector("div#body-wrapper")).size() > 0);
+    }
+
+    @Test
+    public void test17() {
         driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1");
         driver.manage().logs().get("browser").forEach(log -> System.out.println(log));
         List<WebElement> products = driver.findElements(By.cssSelector("a[href*='&product'][title]"));
@@ -41,7 +39,7 @@ public class Test17 extends TestBasis {
             String ProductName = driver.findElement(By.cssSelector("input[name='name[en]']")).getAttribute("value");
             List<LogEntry> logs = driver.manage().logs().get("browser").getAll();
             if(logs.size()!=0){
-                System.out.println("When we open editor for "+ProductName+" product the following messages are logged in browser:");
+                System.out.println("When we open editor for "+ ProductName +" product the following messages are logged in browser:");
                 logs.forEach(log -> System.out.println(log));
             }
             driver.navigate().back();

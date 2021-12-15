@@ -5,7 +5,7 @@ import org.junit.Test;
 public class ScenarioForTest {
     public Application app = new Application();
 
-    @Test
+    //@Test
     public void addingAndDeletingProducts() throws Exception {
         int amountOfProductsToAdd = 3;
         while (amountOfProductsToAdd>0) {
